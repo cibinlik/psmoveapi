@@ -100,7 +100,7 @@ int main(int argc, char* argv[])
         int res = psmove_poll(move);
         if (res) {
             if (psmove_get_buttons(move) & Btn_TRIANGLE) {
-                printf("Triangle pressed, with trigger value: %d\n",
+                printf("Triangle pressed, with trigger VOLKAN: %d\n",
                         psmove_get_trigger(move));
                 psmove_set_rumble(move, psmove_get_trigger(move));
             } else {
